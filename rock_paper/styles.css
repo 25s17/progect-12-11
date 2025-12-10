@@ -1,0 +1,34 @@
+/* styles.css */
+outline: none;
+}
+.choice:active {
+transform: translateY(-6px) scale(1.02);
+}
+#result {
+margin-top: 25px;
+font-size: 20px;
+font-weight: 600;
+color: #ff5c97;
+}
+#score {
+margin-top: 15px;
+font-size: 18px;
+opacity: 0.9;
+color: #555;
+}
+/* Floating baby icons */
+.floating-icon {
+position: absolute;
+font-size: 44px;
+animation: float 6s infinite ease-in-out;
+opacity: 0.85;
+}
+@keyframes float {
+0% { transform: translateY(0) rotate(0deg); }
+50% { transform: translateY(-40px) rotate(8deg); }
+100% { transform: translateY(0) rotate(0deg); }
+}
+/* Soft animations */
+.game-container { animation: popIn 0.8s ease; }
+@keyframes popIn { 0% { transform: scale(0.85); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+
